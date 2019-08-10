@@ -10,51 +10,57 @@ export default class PostList extends Component {
         id: 1,
         author: {
           name: "Diogo Henrique",
-          avatar: "http://"
+          avatar:
+            "https://media.licdn.com/dms/image/C4D03AQFuTp3PCVnMZA/profile-displayphoto-shrink_200_200/0?e=1570665600&v=beta&t=nmYtZVxnpsl9JSrw5Nh5wzLhP82f1H13bjqGdZ17y3E"
         },
         date: "01 Aug 2019",
         content: "E ai Diogo, ta entendendo o que esta desenvolvendo?",
         comments: [
           {
-            id: 2,
+            id: 1,
             author: {
               name: "Diego Fernandes",
-              avatar: "http://"
+              avatar:
+                "https://media.licdn.com/dms/image/C4D03AQF8tYAjGopniw/profile-displayphoto-shrink_800_800/0?e=1570665600&v=beta&t=Ru2byPTpDWAJKw8Tgk3oRz8RL540OtaO2OHKYAwu7L4"
             },
             content: "Comentário legal do diego"
           },
           {
-            id: 2,
+            id: 3,
             author: {
               name: "Diego Fernandes",
-              avatar: "http://"
+              avatar:
+                "https://media.licdn.com/dms/image/C4D03AQF8tYAjGopniw/profile-displayphoto-shrink_800_800/0?e=1570665600&v=beta&t=Ru2byPTpDWAJKw8Tgk3oRz8RL540OtaO2OHKYAwu7L4"
             },
             content: "Comentário2 legal do diego"
           },
           {
-            id: 2,
+            id: 4,
             author: {
               name: "Diego Fernandes",
-              avatar: "http://"
+              avatar:
+                "https://media.licdn.com/dms/image/C4D03AQF8tYAjGopniw/profile-displayphoto-shrink_800_800/0?e=1570665600&v=beta&t=Ru2byPTpDWAJKw8Tgk3oRz8RL540OtaO2OHKYAwu7L4"
             },
             content: "Comentário3 legal do diego"
           }
         ]
       },
       {
-        id: 1,
+        id: 2,
         author: {
           name: "Diogo Henrique",
-          avatar: "http://"
+          avatar:
+            "https://media.licdn.com/dms/image/C4D03AQFuTp3PCVnMZA/profile-displayphoto-shrink_200_200/0?e=1570665600&v=beta&t=nmYtZVxnpsl9JSrw5Nh5wzLhP82f1H13bjqGdZ17y3E"
         },
         date: "01 Aug 2019",
         content: "O Kato é meu amigo e vai me salvar do CSS!!!!",
         comments: [
           {
-            id: 2,
+            id: 1,
             author: {
               name: "Henrique Kato",
-              avatar: "http://"
+              avatar:
+                "https://media.licdn.com/dms/image/C5603AQEoi3By-_jO0Q/profile-displayphoto-shrink_800_800/0?e=1570665600&v=beta&t=44fxKc6BwjyqXxTyI0a4kMbPrYRd3cBAVtNmFvmiZEk"
             },
             content:
               "Mano, e quem vai me salvar do CSS que voce quer que eu te salve?"
@@ -66,11 +72,11 @@ export default class PostList extends Component {
 
   render() {
     return (
-      <ul>
+      <div className="postlist">
         {this.state.posts.map(post => (
           <PostItem key={post.id} post={post} />
         ))}
-      </ul>
+      </div>
     );
   }
 }
